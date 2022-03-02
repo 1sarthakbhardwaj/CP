@@ -1,0 +1,9 @@
+https://www.codingninjas.com/codestudio/guided-paths/data-structures-algorithms/content/118820/offering/1381875?leftPanelTab=1
+
+#include<bits/stdc++.h>
+
+void sort012(int *arr, int n)
+{
+   //   Write your code here
+    sort(arr, arr+n);
+}
