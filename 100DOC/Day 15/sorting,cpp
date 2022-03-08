@@ -1,0 +1,22 @@
+https://www.codingninjas.com/codestudio/guided-paths/data-structures-algorithms/content/118820/offering/1381880?leftPanelTab=1
+
+#include<bits/stdc++.h>
+
+pair<int, int> findFirstLastPosition(vector<int> &arr, int n, int x)
+{
+	 pair<int,int>v;
+   
+    auto it = find(arr.begin(), arr.end(), x);
+    int t = count(arr.begin(), arr.end(), x);
+    if(it != arr.end()){
+        int m = it-arr.begin();
+    v.first = m;
+    v.second = m+t-1;
+    }
+      else{
+          v.first = -1;
+    v.second = -1;
+      }
+ 	return v;                 
+}
+
