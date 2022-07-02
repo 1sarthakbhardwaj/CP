@@ -14,6 +14,27 @@ struct Node{
 }    
 };
 
+void levelorder(Node* root){
+    queue<Node*>q;
+    q.push(root);
+
+    while(!q.empty()){
+        Node* temp = root;
+        cout<<root->data;
+        q.pop();
+
+        if(root->left){
+            q.push(root->left);
+        }
+
+        if(root->right){
+            q.push(root->right);
+        }
+    }
+
+
+}
+
 void preOrder(Node* root){
     if(root!=NULL){
         cout << root->data << " ";
@@ -66,4 +87,6 @@ int main(){
     postOrder(root);
     cout <<endl;
     inOrder(root);
+    cout<<endl;
+    levelorder(root);
     }
